@@ -65,7 +65,6 @@ function getMany (req, res, next) {
 }
 
 function sort (objects, key, order) {
-  console.log('sorting', order);
   var orderCoefficient = (order === 'ascending')
         ? -1
         : 1;
