@@ -20,6 +20,9 @@ node test/spec.js
 ```
 
 ## Server API
+You may receive a `404` when the route is not found; a `405` when the
+method is not defined on a known route; a `401` when the request is
+not authenticated.
 
 * `/login`
   - Method: `POST`
