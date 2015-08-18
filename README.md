@@ -29,12 +29,12 @@ node test/spec.js
     - `password` try 'tenable'
   - Success
     - HTTP Status: `200`
-    - Cookie: `session-id`
+    - Set-Cookie: `sessionId`
   - Failure
     - HTTP Status: `401`
 
 * `/logout`
-  - Methods: `GET`
+  - Method: `GET`
   - URL Params: none
   - Body Params: none
   - Cookie: `sessionId`
@@ -51,6 +51,7 @@ node test/spec.js
       - `hostname` String, required
       - `port` Number, required
       - `username` String, required
+    - Cookie: `sessionId`
     - Success
       - HTTP Status: `201`
       - Header: `Location`. Absolute URI of resource.
@@ -65,6 +66,7 @@ node test/spec.js
       - `ascending`, Null. If present, sort low to high.
       - `descending`, Null. You get the idea.
     - Body Params: none
+    - Cookie: `sessionId`
     - Success
       - HTTP Status: `200`
       - Body: `application/json` only
@@ -76,6 +78,7 @@ node test/spec.js
     - URL Params: 
       `:id`: id of server. See `Location` header when creating one. 
     - Body Params: none
+    - Cookie: `sessionId`
     - Success
       - HTTP Status: `200`
       - Body: `application/json` only
@@ -85,6 +88,7 @@ node test/spec.js
     - URL Params: 
       `:id`: id of server. See `Location` header when creating one. 
     - Body Params: none
+    - Cookie: `sessionId`
     - Success
       - HTTP Status: `200`
     - Failure
@@ -93,6 +97,7 @@ node test/spec.js
     - URL Params: 
       `:id`: id of server. See `Location` header when creating one. 
     - Body Params: See `POST:/servers`. All optional
+    - Cookie: `sessionId`
     - Success
       - HTTP Status: `200`
     - Failure
