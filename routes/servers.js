@@ -21,7 +21,7 @@ function getMany (req, res, next) {
   // Sorting
   if (query.sort !== undefined) {
     // ascending by default
-    var order = (query.descending)
+    var order = (query.order === 'descending')
               ? 'descending'
               : 'ascending';
     results = sort(results, query.sort, order);
@@ -65,6 +65,7 @@ function getMany (req, res, next) {
 }
 
 function sort (objects, key, order) {
+  console.log('sorting', order);
   var orderCoefficient = (order === 'ascending')
         ? -1
         : 1;
