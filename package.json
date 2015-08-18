@@ -1,0 +1,11 @@
+{
+  "name": "framework-challenge",
+  "version": "0.0.1",
+  "description": "Technically, for Tenable's eyes only",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luke Albao <lukealbao@gmail.com> (http://www.relevantish.com)",
+  "license": "ISC"
+}
