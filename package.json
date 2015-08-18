@@ -4,7 +4,7 @@
   "description": "Technically, for Tenable's eyes only",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/spec.js"
   },
   "author": "Luke Albao <lukealbao@gmail.com> (http://www.relevantish.com)",
   "license": "ISC"
