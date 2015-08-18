@@ -64,10 +64,10 @@ not authenticated.
     - URL Params: none
     - Query String Params (All optional):
       - `paginate`, Null. If present, paginate results.
-      - `page`, Number. Pagination offset.
+      - `page`, Number. Pagination offset. Defaults to 1
+      - `perPage`, Number. Records per page. Defaults to 10.
       - `sort`, String. Key for sorting. See `POST`:BodyParams.
-      - `ascending`, Null. If present, sort low to high.
-      - `descending`, Null. You get the idea.
+      - `order`, String. Valid values: `ascending` (default) or `descending`
     - Body Params: none
     - Cookie: `sessionId`
     - Success
